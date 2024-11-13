@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Montserrat:wght@400;700&family=Permanent+Marker&family=Shadows+Into+Light&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kalam", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Permanent Marker", cursive;
+  font-family: "Shadows Into Light", cursive;
+}
+
+/*------HEADER-------*/
+header img {
+  width: 150px;
+}
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav {
+  width: 100%;
+  background-color: white;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin: 10px 15px 15px 10px;
+  transition: 2s;
+}
+header nav ul li a:hover {
+  color: chocolate;
+}
+.btn {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
+/*---------MAIN------*/
+
+.hero {
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  /*background: linear-gradient(rgba(0, 0, 0, 0.332), rgba(0, 0, 0, 0.331)),
+    url("../img/fondo.jpg");
+  /*background-image: url("../img/fondo.jpg");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hero h2 {
+  font-size: 50px;
+}
+.carrusel div img {
+  width: 80%;
+  height: 550px;
+}
+/*.hero div img {
+  height: 580px;
+  padding-top: 20px;
+}*/
+.bienvenidos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.bienvenidos h3 {
+  text-align: center;
+  background-color: burlywood;
+  text-decoration: underline;
+  font-size: 25px;
+}
+.bienvenidos div {
+  width: 300%;
+  margin-top: 10px;
+}
+.bienvenidos img {
+  width: 250px;
+  height: 250px;
+  margin-top: 80px;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-around;
+}
+.productos div {
+  border: 1px solid grey;
+  width: 250px;
+  height: 360px;
+  margin: 30px;
+  text-align: center;
+  transition: 1s;
+}
+.productos div:hover {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.productos div img {
+  width: 250px;
+  height: 250px;
+}
+.grid-productos {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 250px;
+}
+/*.galeria {
+  display: flex;
+  justify-content: center;
+}
+.galeria p {
+  margin-bottom: 20px;
+}
+.galeria a {
+  text-decoration: none;
+  color: rgb(11, 11, 11);
+  font-size: 25px;
+  font-weight: bold;
+  background-color: white;
+  padding: 5px 10px;
+  border: 3px solid grey;
+  border-radius: 20px;
+}
+.galeria div img {
+  width: 100%;
+  height: 250px;
+  background-position: center;
+}
+.galeria div {
+  border: 1px solid grey;
+  width: 60%;
+  height: 800px;
+  margin: 30px;
+  text-align: center;
+}
+*/
+.galeria h1 {
+  text-align: center;
+  background-color: burlywood;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.galeria h2 {
+  font-size: 35px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+}
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 15px;
+}
+
+.grid-galeria div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.75);
+}
+.img4 {
+  grid-column: span 2;
+}
+.img6 {
+  grid-row: span 2;
+}
+.img8 {
+  grid-row: span 2;
+}
+.fixed {
+  position: fixed;
+  right: 50px;
+  bottom: 90px;
+  transition: 1s;
+}
+.fixed:hover {
+  transform: scale(1.3);
+}
+.formulario {
+  background-color: whitesmoke;
+  width: auto;
+}
+.formulario h2 {
+  text-align: center;
+  background-color: burlywood;
+  text-decoration: underline;
+  font-size: 25px;
+}
+.formulario div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section h1 {
+  text-align: center;
+  background-color: burlywood;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.grid-pasteleria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 450px;
+  gap: 50px;
+  margin: 20px 50px 20px 50px;
+}
+.grid-pasteleria div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.75);
+}
+.grid-pasteleria div h5 {
+  text-align: center;
+  color: black;
+}
+
+.grid-pasteleria div p {
+  text-align: center;
+}
+.desayunos div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 5px;
+}
+.desayunos div img {
+  width: 80%;
+  height: 300px;
+}
+/*---------footer-------*/
+footer {
+  padding: 25px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer p {
+  text-align: center;
+}
+footer img {
+  width: 200px;
+}
+
+footer div a img {
+  width: 30px;
+  height: 30px;
+  transition: 1s;
+}
+footer div a img:hover {
+  transform: scale(1.2);
+}
+
+/*!-----media query-----*/
+
+@media screen and (max-width: 450px) {
+  .grid-galeria {
+    grid-template-columns: 1fr;
+  }
+  .grid-item {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  @media screen and (max-width: 465px) {
+    header nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    header nav ul li {
+      margin: 5px;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    header {
+      flex-direction: column;
+    }
+    .bienvenidos {
+      flex-wrap: wrap;
+    }
+    .productos {
+      flex-wrap: wrap;
+    }
+    footer {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    .grid-galeria {
+      grid-template-columns: repeat (2, 1fr);
+      grid-auto-rows: 220px;
+    }
+    .grid-item {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+  }
+}
